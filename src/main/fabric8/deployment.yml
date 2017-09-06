@@ -1,11 +1,10 @@
-kind: DeploymentConfig
 spec:
   template:
     spec:
       containers:
       - name: spring-boot
       - name: jaeger-agent
-        image: jaegertracing/jaeger-agent
+        image: "jaeger-agent:latest"
         ports:
         - containerPort: 5775
           protocol: UDP
